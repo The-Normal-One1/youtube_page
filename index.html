@@ -4,24 +4,545 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Youtube Page</title>
+    <link rel="icon" type="favicon" href="youtube-logo.svg">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="btn">
-        <iframe  width="420" height="315"
-            src="https://www.youtube.com/embed/tgbNymZ7vqY">
-        </iframe>
+    <header class="header">
+        <a href="#">
+           <img src="youtube-logos.jpg" alt="YouTube-Logo" class="youtube-logo"> 
+        </a>
+        <form action="" class="search-bar">
+            <input type="search" class="search-input" placeholder="Search" aria-label="Search">
+            <button class="search-btn" type="sumbit">
+                <img src="search.svg">
+            </button>
+            <a href="#">
+                <img class="search-mic" src="mic.svg" alt="Search Using Voice">
+            </a>
+        </form>
+        <div class="menu-icon">
+            <a href="#">
+                <img src="video_call.svg" alt="Upload Video">
+            </a>
+            <a href="#">
+                <img src="apps_black.svg" alt="Apps">
+            </a>
+            <a href="#">
+                <img src="notifications.svg" alt="Notifications">
+            </a>
+            <a href="#">
+                <img class="menu-channel-icon" src="http://unsplash.it/36/36?gravity=center" alt="Your Channel">
+            </a>
+        </div>
+    </header>
+    <div class="catagories">
+        <section class="catagory-section">
+            <button class="catagory active">All</button>
+            <button class="catagory">Catagory 1</button>
+            <button class="catagory">Catagory 2</button>
+            <button class="catagory">Catagory 3</button>
+            <button class="catagory">Catagory 4</button>
+            <button class="catagory">Catagory 5</button>
+            <button class="catagory">Catagory 6</button>
+            <button class="catagory">Catagory 7</button>
+            <button class="catagory">Catagory 8</button>
+            <button class="catagory">Catagory 9</button>
+        </section>
     </div>
-<button >click me</button>
-<script>
-    const btn = document.getElementById('btn');
+    <div class="videos">
+        <section class="video-section">
+            <article class="video-container">
+                <a href="https://youtu.be/PcxyOf4KznM" alt="Aster full album አስቴር አበበ ሙሉ አልበም" class="thumbnail" data-duration="11:12">
+                    <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="profile" class="channel-icon">
+                    </a>
+                    <div class="video-details">
+                        <a href="https://youtu.be/PcxyOf4KznM" class="video-title">Aster full album አስቴር አበበ ሙሉ አልበም</a>
+                        <a href="https://www.youtube.com/channel/UCiC5aP3Jjp1W6w19HQ_7UEw" class="video-channel-name">Radiant Charis</a>
+                        <div class="video-matadata">
+                            <span>12K views </span>
+                            •
+                            <span> 2 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
 
-btn.addEventListener('click', function onClick() {
-  btn.style.backgroundColor = 'salmon';
-  btn.style.color = 'white';
-  btn.style.display = "none";
-});
+            <article class="video-container">
+                <a href="#" alt="yibte" class="thumbnail" data-duration="11:12">
+                    <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="profile" class="channel-icon">
+                    </a>
+                    <div class="video-details">
+                        <a href="#" class="video-title">Ethiopian Amharic Live Worship</a>
+                        <a href="#" class="video-channel-name">Channel Name</a>
+                        <div class="video-matadata">
+                            <span>12K views </span>
+                             • 
+                            <span> 2 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
 
+            <article class="video-container">
+                <a href="#" alt="yibte" class="thumbnail" data-duration="11:12">
+                    <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="profile" class="channel-icon">
+                    </a>
+                    <div class="video-details">
+                        <a href="#" class="video-title">Ethiopian Amharic Live Worship</a>
+                        <a href="#" class="video-channel-name">CJ Tv</a>
+                        <div class="video-matadata">
+                            <span>12K views </span>
+                            •
+                            <span> 2 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="#" alt="yibte" class="thumbnail" data-duration="11:12">
+                    <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="profile" class="channel-icon">
+                    </a>
+                    <div class="video-details">
+                        <a href="#" class="video-title">Ethiopian Amharic Live Worship</a>
+                        <a href="#" class="video-channel-name">Channel Name</a>
+                        <div class="video-matadata">
+                            <span>12K views </span>
+                             • 
+                            <span> 2 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="#" alt="yibte" class="thumbnail" data-duration="11:12">
+                    <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="profile" class="channel-icon">
+                    </a>
+                    <div class="video-details">
+                        <a href="#" class="video-title">Ethiopian Amharic Live Worship</a>
+                        <a href="#" class="video-channel-name">CJ Tv</a>
+                        <div class="video-matadata">
+                            <span>12K views </span>
+                            •
+                            <span> 2 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="#" alt="yibte" class="thumbnail" data-duration="11:12">
+                    <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="profile" class="channel-icon">
+                    </a>
+                    <div class="video-details">
+                        <a href="#" class="video-title">Ethiopian Amharic Live Worship</a>
+                        <a href="#" class="video-channel-name">Channel Name</a>
+                        <div class="video-matadata">
+                            <span>12K views </span>
+                             • 
+                            <span> 2 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="#" alt="yibte" class="thumbnail" data-duration="11:12">
+                    <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="profile" class="channel-icon">
+                    </a>
+                    <div class="video-details">
+                        <a href="#" class="video-title">Ethiopian Amharic Live Worship</a>
+                        <a href="#" class="video-channel-name">CJ Tv</a>
+                        <div class="video-matadata">
+                            <span>12K views </span>
+                            •
+                            <span> 2 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="#" alt="yibte" class="thumbnail" data-duration="11:12">
+                    <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="profile" class="channel-icon">
+                    </a>
+                    <div class="video-details">
+                        <a href="#" class="video-title">Ethiopian Amharic Live Worship</a>
+                        <a href="#" class="video-channel-name">Channel Name</a>
+                        <div class="video-matadata">
+                            <span>12K views </span>
+                             • 
+                            <span> 2 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="video-section">
+            <h2 class="video-section-title">Special  Section
+                <button class="video-section-title-close">&times;</button>
+            </h2>
+            <article class="video-container">
+                <a href="#" alt="yibte" class="thumbnail" data-duration="11:12">
+                    <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="profile" class="channel-icon">
+                    </a>
+                    <div class="video-details">
+                        <a href="#" class="video-title">Ethiopian Amharic Live Worship</a>
+                        <a href="#" class="video-channel-name">CJ Tv</a>
+                        <div class="video-matadata">
+                            <span>12K views </span>
+                            •
+                            <span> 2 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="#" alt="yibte" class="thumbnail" data-duration="11:12">
+                    <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="profile" class="channel-icon">
+                    </a>
+                    <div class="video-details">
+                        <a href="#" class="video-title">Ethiopian Amharic Live Worship</a>
+                        <a href="#" class="video-channel-name">Channel Name</a>
+                        <div class="video-matadata">
+                            <span>12K views </span>
+                             • 
+                            <span> 2 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="#" alt="yibte" class="thumbnail" data-duration="11:12">
+                    <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="profile" class="channel-icon">
+                    </a>
+                    <div class="video-details">
+                        <a href="#" class="video-title">Ethiopian Amharic Live Worship</a>
+                        <a href="#" class="video-channel-name">CJ Tv</a>
+                        <div class="video-matadata">
+                            <span>12K views </span>
+                            •
+                            <span> 2 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="#" alt="yibte" class="thumbnail" data-duration="11:12">
+                    <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="profile" class="channel-icon">
+                    </a>
+                    <div class="video-details">
+                        <a href="#" class="video-title">Ethiopian Amharic Live Worship</a>
+                        <a href="#" class="video-channel-name">Channel Name</a>
+                        <div class="video-matadata">
+                            <span>12K views </span>
+                             • 
+                            <span> 2 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="#" alt="yibte" class="thumbnail" data-duration="11:12">
+                    <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="profile" class="channel-icon">
+                    </a>
+                    <div class="video-details">
+                        <a href="#" class="video-title">Ethiopian Amharic Live Worship</a>
+                        <a href="#" class="video-channel-name">CJ Tv</a>
+                        <div class="video-matadata">
+                            <span>12K views </span>
+                            •
+                            <span> 2 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="#" alt="yibte" class="thumbnail" data-duration="11:12">
+                    <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="profile" class="channel-icon">
+                    </a>
+                    <div class="video-details">
+                        <a href="#" class="video-title">Ethiopian Amharic Live Worship</a>
+                        <a href="#" class="video-channel-name">Channel Name</a>
+                        <div class="video-matadata">
+                            <span>12K views </span>
+                             • 
+                            <span> 2 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="#" alt="yibte" class="thumbnail" data-duration="11:12">
+                    <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="profile" class="channel-icon">
+                    </a>
+                    <div class="video-details">
+                        <a href="#" class="video-title">Ethiopian Amharic Live Worship</a>
+                        <a href="#" class="video-channel-name">CJ Tv</a>
+                        <div class="video-matadata">
+                            <span>12K views </span>
+                            •
+                            <span> 2 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="#" alt="yibte" class="thumbnail" data-duration="11:12">
+                    <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="profile" class="channel-icon">
+                    </a>
+                    <div class="video-details">
+                        <a href="#" class="video-title">Ethiopian Amharic Live Worship</a>
+                        <a href="#" class="video-channel-name">Channel Name</a>
+                        <div class="video-matadata">
+                            <span>12K views </span>
+                             • 
+                            <span> 2 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="video-section">
+            <article class="video-container">
+                <a href="#" alt="yibte" class="thumbnail" data-duration="11:12">
+                    <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="profile" class="channel-icon">
+                    </a>
+                    <div class="video-details">
+                        <a href="#" class="video-title">Ethiopian Amharic Live Worship</a>
+                        <a href="#" class="video-channel-name">CJ Tv</a>
+                        <div class="video-matadata">
+                            <span>12K views </span>
+                            •
+                            <span> 2 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="#" alt="yibte" class="thumbnail" data-duration="11:12">
+                    <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="profile" class="channel-icon">
+                    </a>
+                    <div class="video-details">
+                        <a href="#" class="video-title">Ethiopian Amharic Live Worship</a>
+                        <a href="#" class="video-channel-name">Channel Name</a>
+                        <div class="video-matadata">
+                            <span>12K views </span>
+                             • 
+                            <span> 2 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="#" alt="yibte" class="thumbnail" data-duration="11:12">
+                    <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="profile" class="channel-icon">
+                    </a>
+                    <div class="video-details">
+                        <a href="#" class="video-title">Ethiopian Amharic Live Worship</a>
+                        <a href="#" class="video-channel-name">CJ Tv</a>
+                        <div class="video-matadata">
+                            <span>12K views </span>
+                            •
+                            <span> 2 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="#" alt="yibte" class="thumbnail" data-duration="11:12">
+                    <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="profile" class="channel-icon">
+                    </a>
+                    <div class="video-details">
+                        <a href="#" class="video-title">Ethiopian Amharic Live Worship</a>
+                        <a href="#" class="video-channel-name">Channel Name</a>
+                        <div class="video-matadata">
+                            <span>12K views </span>
+                             • 
+                            <span> 2 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="#" alt="yibte" class="thumbnail" data-duration="11:12">
+                    <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="profile" class="channel-icon">
+                    </a>
+                    <div class="video-details">
+                        <a href="#" class="video-title">Ethiopian Amharic Live Worship</a>
+                        <a href="#" class="video-channel-name">CJ Tv</a>
+                        <div class="video-matadata">
+                            <span>12K views </span>
+                            •
+                            <span> 2 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="#" alt="yibte" class="thumbnail" data-duration="11:12">
+                    <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="profile" class="channel-icon">
+                    </a>
+                    <div class="video-details">
+                        <a href="#" class="video-title">Ethiopian Amharic Live Worship</a>
+                        <a href="#" class="video-channel-name">Channel Name</a>
+                        <div class="video-matadata">
+                            <span>12K views </span>
+                             • 
+                            <span> 2 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="#" alt="yibte" class="thumbnail" data-duration="11:12">
+                    <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="profile" class="channel-icon">
+                    </a>
+                    <div class="video-details">
+                        <a href="#" class="video-title">Ethiopian Amharic Live Worship</a>
+                        <a href="#" class="video-channel-name">CJ Tv</a>
+                        <div class="video-matadata">
+                            <span>12K views </span>
+                            •
+                            <span> 2 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="#" alt="yibte" class="thumbnail" data-duration="11:12">
+                    <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="profile" class="channel-icon">
+                    </a>
+                    <div class="video-details">
+                        <a href="#" class="video-title">Ethiopian Amharic Live Worship</a>
+                        <a href="#" class="video-channel-name">Channel Name</a>
+                        <div class="video-matadata">
+                            <span>12K views </span>
+                             • 
+                            <span> 2 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
+</body>
 </script>
 </body>
 </html>
